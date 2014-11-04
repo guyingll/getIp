@@ -20,7 +20,7 @@ app.get('/', function(req, res) {
            data.city="沈阳市";
         }
     }
-	
+	res.set("Content-Type", "application/x-javascript");
     res.send("var returnIpAddress="+JSON.stringify(data));
 });
 
